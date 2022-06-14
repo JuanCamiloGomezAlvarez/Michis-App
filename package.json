@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.4.17"
+  },
+  "name": "cursoconsumoapi-rest",
+  "version": "1.0.0",
+  "description": "Michis App",
+  "main": "michisApp.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JuanCamiloGomezAlvarez/Michis-App.git"
+  },
+  "keywords": [
+    "API-REST",
+    "JavaScript"
+  ],
+  "author": "Juan Camilo Gomez Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanCamiloGomezAlvarez/Michis-App/issues"
+  },
+  "homepage": "https://github.com/JuanCamiloGomezAlvarez/Michis-App#readme"
+}

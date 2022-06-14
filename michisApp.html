@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./michisApp.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <span class="error-span" style="background-color: red; " id="error">e</span>
+
+  <header>
+    <h1 class="header-tittle">Michis App</h1>
+  </header>
+
+  <main>
+
+    <section class="random-michis">
+
+      <h2 class=" h2 h2_random-michis">Random Michis</h2>
+      <input class="button_random-michis" type="button" value="RELOAD" onclick="loadRandomMichis()">
+
+      <article class="article_random-michis random-michi1">
+        <img width="200" height="200" id="img1" alt="un gato aleatorio">
+        <input id="button1-random" type="button" value="add to favorites" onclick="saveFavoriteMichi()">
+      </article>
+      <article class="article_random-michis random-michi2">
+        <img width="200" height="200" id="img2" alt="un gato aleatorio">
+        <input id="button2-random" type="button" value="add to favorites" onclick="saveFavoriteMichi()">
+      </article>
+      <article class="article_random-michis random-michi3">
+        <img width="200" height="200" id="img3" alt="un gato aleatorio">
+        <input id="button3-random" type="button" value="add to favorites" onclick="saveFavoriteMichi()">
+      </article>
+    </section>
+
+    <section class="upload-michi">
+      <h2 class="h2">Upload your michi</h2>
+      <form class="upload-form" id="upload-form">
+        <div class="div-file">
+          <p>Search your Michi</p>
+          <input class="file-upload" type="file" id="file" name="file">
+        </div>
+        <input type="button" value="upload" class="form-button" onclick="uploadMichi()">
+      </form>
+    </section>
+    <h2 class="h2">Favorite Michis</h2>
+    <section class="favorites-michis" id="favorites-michis">
+
+      <img id="imgFav" alt="">
+      <input type="button" value="delete michi">
+    </section>
+
+  </main>
+
+  <script src="./michisApp.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

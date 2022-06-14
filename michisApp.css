@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+}
+
+.error-span {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .header-tittle {
+  font-size: 8rem;
+}
+
+.random-michis{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: "h2 h2 h2"
+                        "input input input"
+                        "div1 div2 div3";
+  grid-template-rows: auto auto 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  
+}
+
+.favorites-michis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.h2{
+  text-align: center;
+  grid-area: h2;
+  font-size: 3rem;
+  margin: 15px auto;
+  
+}
+
+.button_random-michis {
+  grid-area: input;
+  cursor: pointer;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: crimson;
+}
+
+
+.article_random-michis {
+  display: grid;
+  justify-items: center;
+  margin: 15px auto;
+}
+
+.article_random-michis img {
+  border: 5px solid crimson;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.article_random-michis input {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: crimson;
+}
+
+.button-favorite {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: crimson;
+}
+
+
+.upload-form {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.div-file{
+  display: grid;
+  align-content: center;
+}
+
+.div-file {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  justify-self: center;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: crimson;
+
+}
+
+.div-file p {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.file-upload{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.form-button {
+  width: 50%;
+  cursor: pointer;
+  justify-self: center;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: crimson;
+  border-radius: 10px;
+}
+
